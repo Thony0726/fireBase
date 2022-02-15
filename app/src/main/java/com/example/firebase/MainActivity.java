@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
                                 Toast.makeText(MainActivity.this,"Bienvenido",Toast.LENGTH_SHORT).show();
 
-                                Intent i = new Intent(MainActivity.this,MainActivity2.class);
+                                Intent i = new Intent(MainActivity.this,Registro.class);
                                 startActivity(i);
                             }
                         });
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             }
         });
 
-        btnSignIn = (SignInButton)findViewById(R.id.sign_in_button);
+        btnSignIn = (SignInButton)findViewById(R.id.sign_in_buttonFacebook);
         btnSignOut = (Button)findViewById(R.id.sign_out_button);
         btnRevoke = (Button)findViewById(R.id.revoke_button);
 
@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         }
 
         //Toast.makeText(this, "No existe el producto con dicho código", Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(this, MainActivity2.class );
+        Intent i = new Intent(this, Registro.class );
         startActivity(i);
 
     }

@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
 
         <EditText
             android:id="@+id/etUser"
@@ -42,11 +43,22 @@
             android:layout_height="wrap_content"
             android:text="Registrar" />
 
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/sign_in_button"
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Facebook"
+            android:layout_marginBottom="30dp" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_buttonFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        </com.google.android.gms.common.SignInButton>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,15 +77,11 @@
                 android:id="@+id/revoke_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="right"
                 android:text="@string/revocar" />
 
         </LinearLayout>
 
-
-
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

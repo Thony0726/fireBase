@@ -21,6 +21,7 @@ dependencyResolutionManagement {
         }
 
         mavenCentral()
+        // IntelliJ main repo. } dependencies {
     }
 }
 rootProject.name = "fireBase"
